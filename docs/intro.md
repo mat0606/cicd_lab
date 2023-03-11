@@ -1,3 +1,9 @@
+---
+title: "Lab Overview"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Lab: DevOps powered with Nutanix Technology
 
 # Objective:
