@@ -1,0 +1,73 @@
+---
+title: "Configure Nexus OSS"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Configure Nexus OSS Image Registry
+
+Nexus OSS is an active product with on-going development from SonarType.  Nexus OSS may introduce new feature which require us to do further configuration to work with the CI/CD blueprint and NKE Kubernetes cluster.
+
+# Login to Nexus OSS
+
+1.  Click on **Application**.  Drill into the application provisioned.
+
+    ![](configure_images/configure_nexus1.png)
+
+2.	Click on **Audit**.  Scroll down.  Expand the **Nexus Create**->**Nexus Output Password**.  Copy the password.
+
+    ![](configure_images/configure_nexus2.png)
+
+3.  Copy the link.  Open a new browser and put the link in.
+
+    ![](configure_images/configure_nexus3.png)
+
+4.	Click on **Sign In**
+
+    ![](configure_images/configure_nexus4.png)
+
+5.  Key in **admin** and the password retrieved earlier.
+
+    ![](configure_images/configure_nexus5.png)
+
+6.  Click on Next.
+
+    ![](configure_images/configure_nexus6.png)
+
+7.	Key in the password assigned by the user.
+
+    ![](configure_images/configure_nexus7.png)
+
+8.	Choose **Enable anonymous access**
+
+    ![](configure_images/configure_nexus8.png)
+
+9.	Click on **Finish**
+
+    ![](configure_images/configure_nexus9.png)
+
+# Create an user for the build
+
+1.	Click on **Administration** followed by **Users**.
+
+    ![](configure_images/configure_nexus10.png)
+
+2.	Click on **Create local user**.
+
+    ![](configure_images/configure_nexus11.png)
+
+3.	Fill in the following details.  
+    a.	username: **mat0606**
+    b.	email: **mat0606@hotmail.com**
+    c.	Get the password from the trainer
+
+     ![](configure_images/configure_nexus12.png)
+
+4.  Scroll down.  Select the following role.  Click on **Create local user**
+
+    ![](configure_images/configure_nexus13.png)
+
+5.	Sign Out and login with **mat0606** user successfully
+
+
+

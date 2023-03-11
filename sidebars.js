@@ -9,7 +9,12 @@ module.exports = {
     {
       type: 'category',
       label: 'Nutanix Kubernetes Engine (NKE)',
-      items: ["nke/provision_nke","nke/verify_nke","nke/retrieve_token"]
+      items: ["nke/provision_nke","nke/verify_nke","nke/retrieve_token","nke/add_account"]
+    },
+    {
+      type: 'category',
+      label: 'Nexus OSS',
+      items: ["nexus/provision_nexus","nexus/configure_nexus","nexus/configure_nexus2"]
     },
   ],
 };
