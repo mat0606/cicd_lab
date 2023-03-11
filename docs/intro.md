@@ -1,47 +1,17 @@
----
-sidebar_position: 1
----
+# Lab: DevOps powered with Nutanix Technology
 
-# Tutorial Intro
+# Objective:
 
-Let's discover **Docusaurus in less than 5 minutes**.
+The trainee will learn the following:
+a. Software Development Lifecycle Process (SDLC) to manage the coordination of business changes into the Development or SIT environment.
+b. Continuous Integration, Delivery and Testing to shorten the development lifecycle and improve quality through consistent automation.
+c. Use of Nutanix Cloud Manager (NCM) Self Service (Formerly Calm) to improve application quality, strengthen application security and efficiency.
+d. Applications residing on top of the Nutanix Hyper-converged infrastructure
 
-## Getting Started
+# Outcomes:
+The trainees will achieve the following outcomes:
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+a. Stakeholders in the Software Development Lifecycle Process (SDLC)
+b. Continuous Integration & Delivery to the environments
+c. Self Service Marketplace with NCM Self Service
+d. Kubernetes with Nutanix Kubernetes Engine (NKE)
