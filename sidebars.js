@@ -16,5 +16,10 @@ module.exports = {
       label: 'Nexus OSS',
       items: ["nexus/provision_nexus","nexus/configure_nexus","nexus/configure_nexus2"]
     },
+    {
+      type: 'category',
+      label: 'CI/CD Environment',
+      items: ["cicd/provision_env","cicd/configure_jenkins"]
+    },
   ],
 };

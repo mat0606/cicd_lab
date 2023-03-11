@@ -1,0 +1,34 @@
+---
+title: "Add account in NCM Self Service"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Add NKE account in NCM Self Service
+
+1.	In Calm, click on **Settings**.  Click on **Accounts**
+
+    ![](account_images/account1.png)
+
+2.	Click on **Add Account**
+
+    ![](account_images/account2.png)
+
+3.  Choose the following:
+a.	Name: **Give the same name as the cluster to allow easier identification**
+b.	Provider: **Kubernetes**
+c.	Type: **Vanilla**
+d.	Server IP: **Retrieved from the kubeconfig file**
+e.	Port: **Retrieved from the kubeconfig file**
+f.	Auth Type: **Service Account**
+
+    ![](account_images/account3.png)
+
+4.	Paste the **Token** and **CA Certificate** retrieved earlier.  Click on **Save**
+
+    ![](account_images/account4.png)
+
+5.	Click on **Verify**.  Ensure **Verification Successful**
+
+    ![](account_images/account5.png)
+    

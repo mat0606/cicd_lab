@@ -1,0 +1,73 @@
+---
+title: "Part 2: Configure Nexus OSS"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Part 2: Create Repository in Nexus
+
+1.	Click on **Administration** icon and click on **Blob Stores**
+
+    ![](configure_images/configure_nexus14.png)
+
+2.	Verify the storage available to store the built Docker images
+
+    ![](configure_images/configure_nexus15.png)
+
+3.	Click on **Repositories**.  Click on **Create repository**
+
+    ![](configure_images/configure_nexus16.png)
+
+4.	Click on **docker (hosted)**.  Nexus OSS license is required for **docker (group)**
+
+    ![](configure_images/configure_nexus17.png)
+
+5.	Fill in the repository name.  **Remember to note down this repository name**.  It will be used when configuring the Nutanix Kubernetes Engine (NKE) and CI/CD blueprint.
+
+    ![](configure_images/configure_nexus18.png)
+
+6.  Scroll down
+
+    ![](configure_images/configure_nexus19.png)
+
+7.  Scroll down.  Click on **Create repository**
+
+    ![](configure_images/configure_nexus20.png)
+
+# Enable Docker Bearer Token
+
+1.	This section is required to allow the use of docker login command and subsequently configuration integration with Nutanix Kubernetes Engine (NKE).
+
+2.	Click on **Realms**
+
+    ![](configure_images/configure_nexus21.png)
+
+3.	Click on **Docker Bearer Token Realm**
+
+    ![](configure_images/configure_nexus22.png)
+
+4.  Click on **Save**
+
+5.	The active realms are
+
+    ![](configure_images/configure_nexus23.png)
+
+# Create password for centos user
+
+1.	Click on Application icon.  Filter by nexus.  Drill into the assigned Nexus OSS.
+
+    ![](configure_images/configure_nexus24.png)
+
+2.	Click on **Services**.  Click on **Nexus**
+
+    ![](configure_images/configure_nexus25.png)
+
+3.	On the right side of the screen, click on **Open Terminal**
+
+4.  Run this command.  Change the password to **nutanix/4u**
+
+
+
+
+
+

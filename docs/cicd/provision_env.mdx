@@ -1,0 +1,78 @@
+---
+title: "Provision Development Environment"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Continuous Integration & Continuous Delivery
+
+The Continuous Integration/Continuous Delivery was setup using 2 different Calm blueprints:
+
+1. Provision Development Environment
+
+2.	Deploy application into NKE Kubernetes cluster
+
+# Provision Development Environment
+
+1.	The Development Environment comprises of the following:
+a.	**Developer Workstation** – developer to develop their application
+b.	**Gitolite** – version control source code
+c.	**Jenkins Master** – CI tool
+d.	**2 Jenkins slave** – execute build job
+
+2.	Navigate to the Calm Blueprint.  Filter by **CICD**.  Click on **Launch**
+
+    ![](images/provision_ci_1.png)
+
+3.  Fill in the following:
+
+    ![](images/provision_ci_2.png)
+
+4.  Scroll down.  Fill in the Nexus Repository VM name
+
+    ![](images/provision_ci_3.png)
+
+5.	Fill in the blueprint name for initial_app_deploy_blueprint according to your assigned cluster.  Eg
+
+    **Application Deployment K8s Karbon Containers 171**
+
+    ![](images/provision_ci_4.png)
+
+6.	Select the Nutanix cluster assigned by the trainer
+
+    ![](images/provision_ci_5.png)
+
+7.	Select the Nutanix cluster assigned by the trainer
+
+    ![](images/provision_ci_6.png)
+
+8.	Select the Nutanix cluster assigned by the trainer
+
+    ![](images/provision_ci_7.png)
+
+9.	Select the Nutanix cluster assigned by the trainer
+
+    ![](images/provision_ci_8.png)
+
+10.  Change the IP address of the Nexus VM as assigned by your trainer
+
+    ![](images/provision_ci_9.png)
+
+11.	Select the Nutanix cluster assigned by the trainer
+
+    ![](images/provision_ci_10.png)
+
+# Resolve Joining the AD Domain Failure
+
+1.	Joining the AD domain may fail when multiple requests are initiated to the AD server on Ubuntu 20.04 disk image.  
+
+2.  Click **Retry**.
+
+    ![](images/provision_ci_11.png)
+
+3.	Wait a few seconds and verify successful execution
+
+    ![](images/provision_ci_12.png)
+
+
+
