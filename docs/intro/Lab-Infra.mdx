@@ -6,7 +6,6 @@ import TabItem from '@theme/TabItem';
 
 # Development Platform & Application Environments in Nutanix Hyper-Converged Infrastructure
 
-
 When the customer flips his mobile phone to access the Internet Banking website, it is a mystery how the transactions are being performed.    This picture describes the view of the applications sitting on top of the infrastructure.  These are the explanation of the names described in this picture.
 
 a)	Nutanix Node – Each Nutanix Node has its dedicated Central Processing Unit (CPU), Memory, SSD Drive and Hard Disk.  
@@ -20,14 +19,15 @@ c)	Acropolis Operating System (AOS) – Similar to your Windows 10 operating sys
 
 d)	Nutanix AHV Hypervisor – Similar to VMWare, AHV provides virtual machines virtualization across all operating systems.
 
-e)	Nutanix Calm – Enterprise Grade automation platform which focuses on 3 solutions areas:
+e)	Nutanix Cloud Manager (NCM) Self Service – Enterprise Grade automation platform which focuses on 3 solutions areas:
 
 a.	Infrastructure Automation 
 b.	Operational Automation or Infrastructure Anywhere
 c.	Application Automation
 
-f)	Nutanix Karbon – Production Grade pure Kubernetes cluster as a service.  Kubernetes is the new modern infrastructure providing lower operating cost, auto-scaling of containers and fault-tolerant applications.
+f)	Nutanix Kubernetes Engine (NKE) – Production Grade pure Kubernetes cluster as a service.  Kubernetes is the new modern infrastructure providing lower operating cost, auto-scaling of containers and fault-tolerant applications.
 
-g)	PRISM Central – IT Operation Management Platform to view the overall capacity of the clusters, no of virtual machine, security policies.  PRISM Central can manage 1 or more Nutanix Clusters.  Most companies used 1 PRISM Central to manage multiple Nutanix Clusters or IT infrastructure within their company.  In the lab, there are 3 Nutanix Clusters.  Each cluster has its own Prism Central, Nutanix Calm and Karbon.
+g)	PRISM Central – IT Operation Management Platform to view the overall capacity of the clusters, no of virtual machine, security policies.  PRISM Central can manage 1 or more Nutanix Clusters.  Most companies used scale out PRISM Central to manage multiple Nutanix Clusters or IT infrastructure within their company.  This lab deployed 3x scale out Prism Central to manage multiple Nutanix clusters.
+
 
 
