@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>CICD on Nutanix Lab Blog</title>
+        <title>Continuous Integration Continuous Delivery on Nutanix Lab Blog</title>
         <link>https://github.com/cicd_lab/blog</link>
-        <description>CICD on Nutanix Lab Blog</description>
+        <description>Continuous Integration Continuous Delivery on Nutanix Lab Blog</description>
         <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://github.com/cicd_lab/blog</id>
-    <title>CICD on Nutanix Lab Blog</title>
+    <title>Continuous Integration Continuous Delivery on Nutanix Lab Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://github.com/cicd_lab/blog"/>
-    <subtitle>CICD on Nutanix Lab Blog</subtitle>
+    <subtitle>Continuous Integration Continuous Delivery on Nutanix Lab Blog</subtitle>
     <icon>https://github.com/cicd_lab/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
