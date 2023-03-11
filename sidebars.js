@@ -21,5 +21,10 @@ module.exports = {
       label: 'CI/CD Environment',
       items: ["cicd/provision_env","cicd/configure_jenkins"]
     },
+    {
+      type: 'category',
+      label: 'Register Nexus to NKE cluster',
+      items: ["nexus_nke/create_ns","nexus_nke/nexus_nke"]
+    }
   ],
 };
