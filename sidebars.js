@@ -43,5 +43,10 @@ module.exports = {
       label: 'Environment Verification',
       items: ["env_verify/env_verify", "env_verify/env_verify2"]
     },
+    {
+      type: 'category',
+      label: 'Software Development',
+      items: ["cicd_lab/cicd_lab", "cicd_lab/access_app"]
+    },
   ],
 };
