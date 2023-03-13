@@ -46,7 +46,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Software Development',
-      items: ["cicd_lab/cicd_lab", "cicd_lab/access_app"]
+      items: ["cicd_lab/create_defect","cicd_lab/cicd_lab", "cicd_lab/access_app"]
     },
   ],
 };
