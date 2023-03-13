@@ -1,0 +1,87 @@
+---
+title: "Setup JIRA"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Setup JIRA
+
+1.	Navigate to **Application** on the left hand side.  Drill into the application.  Eg MRP_ENV_GP5  
+
+    ![](images/jira1.png)
+
+2.	Click on **Services**.  Click on **JIRA**
+
+    ![](images/jira2.png)
+
+3.  Note down the **IP address**.  Click on **Open Terminal**
+
+    ![](images/jira3.png)
+
+4.	Run this command to navigate to the JIRA directory and shutdown JIRA
+
+    ```bash
+    cd /opt/atlassian/jira/bin
+    sudo ./shutdown.sh
+
+5.  This is the output of running the above command.
+
+    ![](images/jira4.png)
+
+6.	Run this command to startup JIRA
+
+    ```bash
+    sudo ./startup.sh
+
+7.  This is the output of running the above command
+
+    ![](images/jira5.png)
+
+8.  Open a browser:  Put in the following url:
+
+    ```bash
+    http://JIRA IP address:8080
+
+9.	Select **Set it up for me**.  Select **Continue to MyAtlassian**
+
+    ![](images/jira6.png)
+
+10.	Select **Sign in to Atlassian with Google**
+
+    ![](images/jira7.png)
+
+11.	Select the **Jira Software (Data Center)**
+
+    ![](images/jira8.png)
+
+12.	Click on **Generate License**
+
+    ![](images/jira9.png)
+
+13.	Select **Yes**
+
+    ![](images/jira10.png)
+
+14.	Change to your email address.  Key in your own password.  Click on Next
+
+    ![](images/jira11.png)
+
+15.  Wait a few mins for JIRA to power up
+
+    ![](images/jira12.png)
+
+16.  The installation is ready.  Click on **Let’s get started**
+
+    ![](images/jira13.png)
+
+17.  Click on **Continue**
+
+    ![](images/jira14.png)
+
+18.	**Choose an avatar**.  Click on **Next**
+
+    ![](images/jira15.png)
+
+
+
+

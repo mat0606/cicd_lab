@@ -35,6 +35,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Configure JIRA',
+      items: ["jira/configure_jira","jira/create_project","jira/create_user"]
+    },
+    {
+      type: 'category',
       label: 'Environment Verification',
       items: ["env_verify/env_verify", "env_verify/env_verify2"]
     },
