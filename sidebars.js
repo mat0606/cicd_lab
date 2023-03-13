@@ -7,6 +7,14 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Calm 101',
+      items: ['what_is_calm/what_is_calm',
+              'calm_project/calm_project',
+              'calm_marketplace/calm_marketplace',
+             ],
+    },
+    {
+      type: 'category',
       label: 'Nutanix Kubernetes Engine (NKE)',
       items: ["nke/provision_nke", "nke/verify_nke", "nke/retrieve_token", "nke/add_account"]
     },
