@@ -1,0 +1,83 @@
+---
+title: "Part 1 Environment Verification"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Part 1 Environment Verification
+
+# Calm Application Verification
+
+1.	The application is in **Running** state
+
+    ![](images/env_verify1.png)
+
+2.	Click on **Audit**.  Expand **Developer Workstation – Create**.  Expand **Setup Demo Project**.  Expand **Developer Workstation – Create and Push Docker Images**
+
+    ![](images/env_verify2.png)
+
+3.  Verify successful execution of build and push docker images to Nexus OSS repository
+
+    ![](images/env_verify3.png)
+
+# Built Image in Nexus OSS Repository verification
+
+1.	Login to Nexus OSS.
+
+2.	Click on **Browse** icon.  Click on **Browse**.  Click on **Repository**
+
+    ![](images/env_verify4.png)
+
+3.	Verify the image is stored in this repository
+
+    ![](images/env_verify5.png)
+
+# Jenkins Verification
+
+1.	If you choose to create the First admin user, it was important to use the Jenkins authorization password to create the admin user.  The consequence was “401 un-authorized” error when developer deliver the change to Git.
+
+    ![](images/env_verify6.png)
+
+2.	Retrieve the Jenkins url in Calm Application.  Click on **Services**.  Click on **Jenkins Master**
+
+    ![](images/env_verify7.png)
+
+3.	On the right hand side of the screen, retrieve the **IP address**.
+
+    ![](images/env_verify8.png)
+
+4.	Open the browser.  Put in the following url
+
+    ```bash
+    http://**<jenkins master>**:8080
+
+5.	Login to Jenkins using 
+
+    ```bash
+    a.  Username: **admin**
+    b.  Password: **Initial Administrator Authorization**
+
+6.  This is an example
+
+    ![](images/env_verify9.png)
+
+7.	Observe there are 2 pipelines created.  Drill into devops**<initial_project>** set in Calm blueprint
+
+    ![](images/env_verify10.png)
+
+# Gitolite Repository configured
+
+1.	Click on **Configure**.  Scroll down.  Observe the configuration to Gitolite repository
+
+    ![](images/env_verify11.png)
+
+# Verify configuration to Nexus OSS
+
+1.	Click on **Build with Parameters**
+
+    ![](images/env_verify12.png)
+
+2.	Scroll down.  
+
+    ![](images/env_verify13.png)
+

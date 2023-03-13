@@ -1,0 +1,67 @@
+---
+title: "Part 2 Build & Deployment Verification"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Part 2 Build and Deployment Verification
+
+# Verify Build & Deployment Process
+
+1.	In Calm, navigate to **Application** icon.  Click on **Services**.  Click on **Developer**
+
+    ![](images/env_verify14.png)
+
+2.	On the right side of the screen, note down the **IP address**
+
+    ![](images/env_verify15.png)
+
+3.	Putty into the developer VM using the following credential:
+    ```bash
+    a.	Username: nutanix
+    b.	Password: Check with the trainer
+
+4.	Change the highlighted item.  Navigate to the directory.
+
+    cd devops**<initial_project_name>** configured in the **CICD_Nexus_Base2-xxxx** blueprint
+
+5.  Navigate to the directory based on the initial_project_name
+
+    cd **devops218**
+
+6.  An example is 
+
+    ```bash
+    cd devops initial_project_name configured in the CICD_Nexus_Base2-xxxx blueprint
+    cd devops218
+
+5.	Run these commands to add the files to the GIT local repository in the developer workstation
+
+    ![](images/env_verify16.png)
+
+6.	Run this command to push the source codes to the Gitolite repository
+
+    ![](images/env_verify17.png)
+
+# Verify Build Process in Jenkins
+
+1.	In Calm, click on **Application** icon.  Click on **Services**.  Click on **Jenkins Master**
+
+    ![](images/env_verify18.png)
+
+2.	On the right side of the screen, note down the IP address.
+
+    ![](images/env_verify19.png)
+
+3.	Open a browser.  Put in the following url:
+
+    ```bash
+    http://**<jenkins master IP>**:8080
+
+    ![](images/env_verify20.png)
+
+4.	Click on **Audit**.  Scroll down to **Developer Workstation**.  Expand and drill into **Developer Workstation – Jenkins Master Details**
+
+    ![](images/env_verify21.png)
+
+5.	Login to Jenkins using admin user and initial authorization password.
