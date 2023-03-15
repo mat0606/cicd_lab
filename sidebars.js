@@ -52,7 +52,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Consumption of Persistent Volumes',
-      items: ["storage/csi","storage/kubeconfig","storage/volume_pvc"]
+      items: ["storage/csi","storage/kubeconfig","storage/volume_pvc","storage/volume_other"]
     },
   ],
 };
