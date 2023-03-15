@@ -49,5 +49,10 @@ module.exports = {
       label: 'Software Development',
       items: ["cicd_lab/create_defect","cicd_lab/cicd_lab", "cicd_lab/access_app"]
     },
+    {
+      type: 'category',
+      label: 'Consumption of Persistent Volumes',
+      items: ["storage/csi","storage/kubeconfig","storage/volume_pvc"]
+    },
   ],
 };
