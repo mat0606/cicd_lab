@@ -21,6 +21,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Install Services in Nutanix Kubernetes Engine (NKE)',
+      items: ["nke_services/metallb"]
+    },
+    {
+      type: 'category',
       label: 'Nexus OSS',
       items: ["nexus/provision_nexus", "nexus/configure_nexus", "nexus/configure_nexus2"]
     },

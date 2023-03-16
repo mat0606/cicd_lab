@@ -1,0 +1,114 @@
+---
+title: "MetalLB into NKE cluster"
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Provision MetalLB into NKE cluster
+
+Kubernetes does not offer an implementation of network load balancers.  MetalLB offers a network load balancer implementation that integrates with standard network equipment.  MetalLB allows external IP address to be assigned to Ingress Controller or Kubernetes services with LoadBalancer type.
+
+# Reserve IP address for MetalLB
+
+1.	The Calm marketplace provision both the Centos kubectl client and NKE cluster.  Click on **Services**.  Click on **Karbon**
+
+    ![](images/metallb1.png)
+
+2.	On the right side of the screen, note down the IP address
+
+    ![](images/metallb2.png)
+
+3.	Putty into the Centos VM of the NKE cluster.  Login as centos and password setup earlier.  Run this command to install nmap
+
+    ```bash
+    sudo yum -y install nmap
+
+4.  This is the picture of running the command
+
+    ![](images/metallb3.png)
+
+5.  Run this command according to your cluster CIDR.  Eg cluster PHX-POC169 has a CIDR of 10.42.169.97/27.  Replace it with your assigned cluster CIDR
+
+    ```bash
+    nmap -v -sn 10.x.x.x/27
+
+6.  This is the picture running the command
+
+    ![](images/metallb4.png)
+
+7.  Putty into the CVM.  Eg 10.42.169.29.  Login as nutanix.  Retrieve the password from the trainer
+
+8.	Replace the network and IP list.  Run this command to reserve the IP
+
+    ```bash
+    acli net.add_to_ip_blacklist Primary_xxx ip_list=x.x.x.x,x.x.x.x
+
+9.  This is the picture running the command
+
+    ![](images/metallb5.png)
+
+# Provision MetalLB into NKE cluster
+
+1.	Select **Provision MetalLB on NKE cluster
+
+    ![](images/metallb6.png)
+
+2.  Click on **Launch**
+
+    ![](images/metallb7.png)
+
+3.	Fill in the name.  Choose your **project** and **environment**.
+
+    ![](images/metallb8.png)
+
+4.	Select the **NKE cluster**.  Fill in the start and end IP address reserved earlier.
+
+    ![](images/metallb9.png)
+
+5.	The environment will auto-populate these 2 fields for the Centos VM.  Click **Deploy**
+
+    ![](images/metallb10.png)
+
+6.	Wait a few minutes for it to deploy.
+
+    ![](images/metallb11.png)
+
+7.  Click on **Services**.  Click on **metalLB**.  
+
+    ![](images/metallb12.png)
+
+8.	On the right side of the screen, click on **Open Terminal**
+
+    ![](images/metallb13.png)
+
+9.	Execute the following commands to connect to the NKE cluster
+
+    ```bash
+    export KUBECONFIG=xxx-kubectl.cfg
+    kubectl get nodes
+
+10.  This is the successful connection to the NKE cluster
+
+    ![](images/metallb14.png)
+
+11.  Run this command to verify the metallb-system namespace was created
+
+    ```bash
+    kubectl get ns
+
+12.  Verify the metallb-system namespace was created
+
+    ![](images/metallb15.png)
+
+13.  Run this command to verify the pods are started and services running
+
+    ```bash
+    kubectl -n metallb-system get all
+
+14. Verify the pods are running and services started
+
+    ![](images/metallb16.png)
+
+
+
+
