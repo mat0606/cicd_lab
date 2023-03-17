@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 Kubernetes does not offer an implementation of network load balancers.  MetalLB offers a network load balancer implementation that integrates with standard network equipment.  MetalLB allows external IP address to be assigned to Ingress Controller or Kubernetes services with LoadBalancer type.
 
-# Reserve IP address for MetalLB
+# Find out available IP address for MetalLB
 
 1.	The Calm marketplace provision both the Centos kubectl client and NKE cluster.  Click on **Services**.  Click on **Karbon**
 
@@ -35,17 +35,6 @@ Kubernetes does not offer an implementation of network load balancers.  MetalLB 
 6.  This is the picture running the command
 
     ![](images/metallb4.png)
-
-7.  Putty into the CVM.  Eg 10.42.169.29.  Login as nutanix.  Retrieve the password from the trainer
-
-8.	Replace the network and IP list.  Run this command to reserve the IP
-
-    ```bash
-    acli net.add_to_ip_blacklist Primary_xxx ip_list=x.x.x.x,x.x.x.x
-
-9.  This is the picture running the command
-
-    ![](images/metallb5.png)
 
 # Provision MetalLB into NKE cluster
 
